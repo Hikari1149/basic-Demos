@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link type="text/css" rel="stylesheet" href="../css/site.css">
+    <script type="text/javascript" src="../js/site.js"></script>
+</head>
+<body>
+<div id="pn">
+    <div id="list" style="left:-600px">
+        <img src="../img/5F.jpg">
+        <img src="../img/1F.jpg">
+        <img src="../img/2F.jpg">
+        <img src="../img/3F.jpg">
+        <img src="../img/4F.png">
+        <img src="../img/5F.jpg">
+        <img src="../img/1F.jpg">
+    </div>
+    <div id="buttons">
+        <span class="on"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="pp">
+        <a href="#" class="arrow" id="prev">&lt;</a>
+        <a href="#" class="arrow" id="next">&gt;</a>
+    </div>
+</div>
+</body>
+<!--
+焦点图轮播.
+效果:在一个位置上自动播放若干张图片.
+
+假设每个图片宽度为600px.设置块list宽度为3000px(包含5张图片).
+并且每个图片都左浮动.现在图片在同一行上.
+块pn包含list,其宽度为600px.将其overflow:hidden即可显示单张图片.
+将list左偏移图片宽度的倍数,就能选择要显示的图片.position:absolute,left:-k*600px;
+
+按钮的z-index高于list.并用绝对定位放在pn的下面,利用border-radius:50%,和背景色来改变样式为圆形
+
+利用setTimeout()每次调用时慢慢改变list的left值.
+最后一张滑动到第一张时经过了中间几张图片.
+在放一张第一张的图片到最后.
+从最后一张滑动到第一张副本后,在瞬间跳到真的第一张.这样就不会经过中间几张图片.
+
+焦点图自动播放.
+相当于每隔几秒按下下一张按钮.
+在鼠标不在图片上时(mouseout),使用setInterval()即可.
+
+-->
+
+</html>

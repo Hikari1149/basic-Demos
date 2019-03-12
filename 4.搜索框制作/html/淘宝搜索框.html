@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taobao Demo</title>
+    <link rel="stylesheet" type="text/css" href="../css/Taobao.css">
+    <script type="text/javascript" src="../js/Taobao.js"></script>
+</head>
+<body>
+<div class="search-container">
+    <div id="search_tab" class="search-list">
+        <ul>
+            <li id="tab_1" class="selected">
+                <a href="#">宝贝</a>
+            </li>
+            <li id="tab_2">
+                <a href="#">店铺</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="search-pannel">
+        <form>
+            <div class="search-tips">
+                <a href="#">高级<br>搜索</a>
+            </div>
+
+            <div class="search-button">
+                  <button class="btn-search" type="submit"></button>
+            </div>
+
+            <div class="search-common-panel">
+                <input type="text" x-webkit-speech="">
+                <i class="iconfont">ő</i>
+            </div>
+        </form>
+    </div>
+</div>
+<!--
+切换菜单.
+初始将li高度设置为块高度的一半.当鼠标移入li时,将div高度还原,就能将菜单展开.
+鼠标移入相应的li时(mouseover),改变其背景颜色.
+单击li切换,将初始li-display设置为none,选中的li(click)添加类selected.其display为block.
+
+//ps:每次click都会触发mouseover事件.当click时用flag标志一下即可.
+-->
+</body>
+</html>

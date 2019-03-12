@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bing搜索框</title>
+    <link type="text/css" rel="stylesheet" href="../css/Bing.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/Bing-js.js"></script>
+</head>
+<body>
+<div class="bg-div">
+    <div class="search-box">
+        <div class="logo"></div>
+        <form id="search-form" action="https://cn.bing.com/search">
+            <input type="text" class="search-input-text" id="search-input">
+            <input type="submit" class="search-input-button" value="">
+        </form>
+    </div>
+</div>
+<div class="suggest" id="search-suggest" style="display:none">
+    <ul id="search-result">
+        <li>搜索结果1</li>
+        <li>搜索结果2</li>
+    </ul>
+</div>
+</body>
+
+<!--
+Bing搜索框制作.
+logo和form同一行,两个元素同时向左float即可.
+去掉input边框  border:0
+去掉input-submit默认属性, 令其val=0即可
+适当设置padding让input-text看起来不那么挤
+
+Bing搜索-智能提示效果.
+在搜索框输入关键字,浏览器将关键字「异步」发送给服务器
+服务器经过处理。将相应数据以 Json 格式返回客户端(跨域使用jsonp)
+浏览器接受服务器响应数据，解析之后使用 js 操作 dom 显示数据。
+
+用<ul>来显示要提示的内容.
+利用jquery-bind来进行事件绑定.当key-up时 显示提示内容ul.
+利用offset,将内容放在form表单下方
+
+ps(不知道为什么啥bing-api传的数据为空...有bug的时候记得console一下..)
+
+
+
+
+
+
+-->
+
+</html>

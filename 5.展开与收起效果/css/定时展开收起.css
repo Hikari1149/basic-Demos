@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;
+    padding:0px;
+}
+#pn{
+    background: #e8e8e8;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    height: 550px;
+    text-align: center;
+}
+.content{
+    margin: 0 auto;
+    padding: 10px;
+    width: 950px;
+    background: gray;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+}

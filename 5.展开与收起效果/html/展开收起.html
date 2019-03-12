@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展开收起</title>
+    <link type="text/css" rel="stylesheet" href="../css/site.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+</head>
+<body>
+<div id="pn">
+    <p> 手机-商品筛选</p>
+    <p>网络：移动4G 联通3G 电信4G</p>
+    <div id="hpn" style="display: none">
+        <p>价格: 5000以上 4000-4999 3000-3999</p>
+        <p>特点: JDPhone计划 防水 长待机 1080P全高清屏</p>
+    </div>
+</div>
+<p class="slide">
+    <a href="#" id="strHref" class="btn-slide">更多选项</a>
+</p>
+
+<!--
+展开收起效果.
+初始设置隐藏部分display:none.其包含块高为auto.
+设置按钮点击事件为showdiv,将隐藏部分display设置为block,更改点击事件为hidediv,收起同理.
+
+定时展开与收起.
+初始还是把要展开的部分隐藏,要展开的时候,慢慢增加隐藏部分的高度.收起同理.(或使用jq内置函数)
+
+
+-->
+
+</body>
+</html>

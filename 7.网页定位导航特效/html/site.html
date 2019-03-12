@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link type="text/css" rel="stylesheet" href="../css/site.css">
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/site.js"></script>
+</head>
+<body>
+<div id="menu">
+    <ul>
+        <li><a href="#item1">1F男装</a></li>
+        <li><a href="#item2">2F女装</a></li>
+        <li><a href="#item3">3F美妆</a></li>
+        <li><a href="#item4">4F数码</a></li>
+        <li><a href="#item5">5F母婴</a></li>
+    </ul>
+</div>
+<div id="content">
+    <h1>hihihi购物网</h1>
+    <div id="item1" class="item">
+        <h2>1F男装</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+                <a href="#"><img src="../img/1F.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="item2" class="item">
+        <h2>2F女装</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+                <a href="#"><img src="../img/2F.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="item3" class="item">
+        <h2>3F美妆</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+                <a href="#"><img src="../img/3F.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="item4" class="item">
+        <h2>4F数码</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+                <a href="#"><img src="../img/4F.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="item5" class="item">
+        <h2>5F母婴</h2>
+        <ul>
+            <li>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+                <a href="#"><img src="../img/5F.jpg"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+</body>
+<!--
+网页定位导航特效.
+左边为内容,右边为导航条.
+当页面滑动到指定内容时,导航条对应位置高亮.
+点击导航条对应位置,(锚点跳转,用于跳转到页面的某一位置),跳到相应内容区.
+
+内容先居中,导航条position:fixed,也居中,左外边距=width(content)/2即可把导航放在内容右边.
+鼠标悬停在导航条时,高亮对于位置样式(改变字体颜色和背景色).
+
+$(window).scroll(callback) 滚动条滚动时调用回调函数
+$(document).scrollTop():当前滚动条的高度.
+$(item).offset().top():当前块的高度.
+找到最后一个小于滚动条高度的块,使其高亮即可(改变类.)
+
+
+
+-->
+</html>

@@ -1,0 +1,64 @@
+body{
+    background-color: #333;
+}
+.bg-div{
+    background: url("../img/river.jpg");width: 1228px;height: 690px;margin:0 auto;
+    position: relative;
+}
+
+.logo{
+    background-image: url("../img/logo.png");width: 107px;height: 53px;
+    float:left;
+    margin:-4px 18px 0px 0px;
+}
+form{
+    float:left;
+    background: #fff;
+    padding: 5px;
+}
+.search-input-text{
+    border:0;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    outline: none;
+    width: 350px;
+}
+.search-input-button{
+    border:0;
+    float: left;
+    background-image: url("../img/search-button.png");
+    width:29px;
+    height:29px;
+}
+.search-box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -245px;
+    margin-top: -15px;
+}
+.suggest{
+
+    width: 388px;
+    background-color: #fff;
+    border:1px solid #999;
+}
+.suggest ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+.suggest ul li{
+    padding: 3px;
+    font-size:18px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.suggest ul li:hover{
+    background-color: #e5e5e5;
+    text-decoration: underline;
+}
+
+
+

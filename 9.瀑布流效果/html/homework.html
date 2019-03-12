@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework</title>
+    <style>
+        .pn{
+            background: #333;
+            width: 600px;
+            height: 500px;
+            display:flex;
+            justify-content: center;
+        }
+        .box{
+            background: #0ff;
+            width: 100px;
+            height: 100px;
+        }
+
+
+    </style>
+    <script>
+        function parseUrl() {
+            let parsed = {};
+            //var url=location.search
+            let url = 'https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9609524042392246876%22%7D&n_type=0&p_from=1';
+            let urls = url.split('?');
+            if(urls.length<=1)  return {};
+            let params=urls[1].split('&');//分割key=val
+            for(let i=0,length=params.length;i<length;i++){
+                let ele=params[i],
+                    pos=ele.indexOf('='),
+                    key,val;
+                if(pos===-1)    continue;//无等号.
+                key=ele.substr(0,pos);
+                val=ele.substr(pos+1);
+                parsed[key]=decodeURIComponent(val);//解码.
+            }
+            console.log(parsed);
+        }
+        parseUrl();
+
+    </script>
+</head>
+<body>
+<div class="pn">
+<div class="box"></div>
+</div>
+
+
+<div id="pa">
+    <ul>
+        <li id="v"></li>
+        <li>
+            <span id="u">
+            check;
+            </span>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>
